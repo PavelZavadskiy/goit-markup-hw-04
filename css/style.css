@@ -375,8 +375,7 @@ header > .header-section {
   width: 40px;
   height: 40px;
   position: relative;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-name-position a:hover,
@@ -419,7 +418,7 @@ header > .header-section {
   height: 88px;
 }
 
-.customers-list-box a {
+.customers-list-box .link {
   width: 100%;
   height: 100%;
   border: 1px solid var(--fill-icon-customer);
@@ -431,8 +430,8 @@ header > .header-section {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.customers-list-box a:hover,
-.customers-list-box a:focus {
+.customers-list-box .link:hover,
+.customers-list-box .link:focus {
   border-color: var(--fill-icon-customer-hover);
   color: var(--fill-icon-customer-hover);
 }
@@ -584,7 +583,7 @@ footer .paragraf {
 
 .portfolio-box:hover .overlay-text,
 .portfolio-box:focus .overlay-text {
-  transform: translateY(0);
+  transform: translateY(0%);
 }
 
 .portfolio-box .portfolio-card {
@@ -649,6 +648,7 @@ footer .paragraf {
 .btn_modal:hover,
 .btn_modal:focus {
   background-color: var(--bg-color-btn-hf);
+  fill: var(--color-btn-text);
   border: none;
 }
 
