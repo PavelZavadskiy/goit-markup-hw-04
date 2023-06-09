@@ -235,6 +235,7 @@ header > .header-section {
   background-position: center;
   background-size: cover;
   max-width: 1440px;
+  margin: 0 auto;
 }
 
 .order-section .main-title {
